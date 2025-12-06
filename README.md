@@ -1,8 +1,22 @@
 # cisc121-final-project
+
+Application Name: Number Guessing Game
+
+<img width="1887" height="547" alt="Screenshot 2025-12-06 134326" src="https://github.com/user-attachments/assets/28851e1e-465a-4e25-b806-5bc5e66967e3" />
+<img width="1915" height="565" alt="Screenshot 2025-12-06 134340" src="https://github.com/user-attachments/assets/450143cf-7ca6-4c17-a315-650ddd9335a2" />
+<img width="1908" height="583" alt="Screenshot 2025-12-06 134353" src="https://github.com/user-attachments/assets/c00b22d0-5ee0-43f5-87ee-a979921b1994" />
+<img width="1903" height="540" alt="Screenshot 2025-12-06 134402" src="https://github.com/user-attachments/assets/5372b26c-98bb-4dd4-9409-506dd700a24a" />
+<img width="1912" height="554" alt="Screenshot 2025-12-06 134415" src="https://github.com/user-attachments/assets/947b5ff2-03cb-4865-a946-af56c1393ada" />
+<img width="1902" height="563" alt="Screenshot 2025-12-06 134428" src="https://github.com/user-attachments/assets/91859a5c-fc4e-4736-b9e1-05401a2e7a3a" />
+<img width="1908" height="506" alt="Screenshot 2025-12-06 134436" src="https://github.com/user-attachments/assets/2ac7c115-b912-4f7a-b514-81e5d80c164f" />
+
+____________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
 Chosen algorithm: Binary Searching
 For my program, I am making a small interactive game that consists of the user choosing a number between 1-100 in their heads, and then making the program figure out what number it is by the user either telling it that the number it chose is higher or lower than the number it had given them. For this program, I chose binary searching as it makes the most sense of the two searching algorithms to use, considering it is a program that involves eliminating series of numbers before or after the given midpoints. 
 
-
+____________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 
 Decomposition: 
@@ -18,3 +32,19 @@ This program, despite being built to guess a number of which the user is thinkin
 
 Algorithm Design:
 The algorithm for this number guessing game starts by confirming and setting the lower and upper limits (low = 1, high = 100) and setting the guess count to one. For the first guess, the program will select a random number within the range and prompts the user. After receiving the user's response—“Higher,” “Lower,” or “Correct”—the program updates the bounds accordingly: if the user indicates the number is higher, the lower bound is increased to one above the current guess; if lower, the upper bound is decreased to one below the current guess. If the user responds “Correct,” the game ends and the total number of guesses is displayed. For all subsequent guesses, the computer uses binary search by calculating the midpoint of the current range as the next guess, incrementing the guess count each time. The program also checks for inconsistencies, such as when the lower bound exceeds the upper bound, indicating that the user’s responses do not align with a single number. This process repeats—updating bounds, computing midpoints, and prompting the user—until the correct number is identified.
+
+____________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+Steps to Run:
+
+1. Press the 'Start Game' button once you have thought of a number.
+2. Depending on whether your chosen number is higher or lower than the given guess, select an option from the multiple choice menu accordingly.
+3. Once you have selected the accurate response, click the 'Submit Response' button for the next guess to appear, refer back to step 2 to continue.
+4. Once the computer has successfully figured out your secret number, choose the 'correct' option from the multiple choice menu.
+5. The game will end, telling you the amount of guesses it took.
+6. Press the 'Start Game' button again if you wish to continue playing another round. 
+
+
+____________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+Mary Palumbo
