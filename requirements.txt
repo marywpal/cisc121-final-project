@@ -1,0 +1,5 @@
+requirements
+
+CISC 121 - final project
+
+gradio
